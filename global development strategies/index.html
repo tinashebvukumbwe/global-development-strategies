@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+    <title>GLOBAL DEVELOPMENT STRATEGISTS</title>
+        <meta charset="utf-8">
+ <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        <link href="normalize/normalize.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+
+<body>
+<header>
+<div class="container">
+<h2>Global Dev strategies</h2>
+<img src="" alt="" class="logo">
+
+
+  
+
+
+
+
+
+  <div id="mySidenav" class="sidenav">
+<!-- for smaller screen sizes -->
+<nav>
+  <ul class="ul">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html"><li class="li">Home</li></a>
+      <a href="about.html"><li class="li">About</li></a>
+      <a href="gallery.html"><li class="li">Gallery</li></a>
+      <a href="contacts.html"><li class="li">contacts</li></a>
+</ul>
+
+
+</nav>
+
+
+  </div>
+
+<span style="font-size:30px;cursor:pointer;color:dodgerblue;margin:25px;" onclick="openNav()">&#9776;</span>
+
+
+</header>
+
+
+  
+
+<nav >
+  <ul class="ll">
+
+    <a href="index.html"><li class="li">Home</li></a>
+      <a href="about.html"><li class="li">About</li></a>
+      <a href="gallery.html"><li class="li">Gallery</li></a>
+      <a href="contacts.html"><li class="li">Contacts</li></a>
+   </ul>
+</nav>
+
+ 
+<section>
+<div class="slideshow-container">
+
+<div class="mySlides">
+ <img src="img/p9.jpg" class="img">
+ 
+</div>
+
+
+
+<div class="mySlides ">
+  <img src="img/p9.jpg" class="img">
+  
+</div>
+
+
+
+<div class="mySlides">
+ <img src="img/p3.jpg" class="img"> 
+ 
+</div>
+
+
+
+<div class="mySlides">
+ <img src="img/p8.jpg" class="img"> 
+ 
+</div>
+
+<div class="mySlides">
+  <img src="img/p 10.jpg" class="img"> 
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span> 
+ <span class="dot" onclick="currentSlide(5)"></span> 
+ <span class="dot" onclick="currentSlide(6)"></span>  
+</div>
+
+
+</section>
+
+
+
+<section>
+<div class="columns">
+<div class="primary">
+<h3>ABOUT OUR COMPANY</h3>
+
+<p>We are a think tank company that works to find resources and networks needed for leaders,upcoming businesses and existing ones.Our main skill lies in idea generation and management,project monitering and evaluation,research services,evaluation,research services,proposals,resource access and accumulation,network creation and investment for the sustainable development of africa.</p>
+
+
+<h3>OBJECTIVES</h3>
+<ul>
+
+<li>Development</li>
+<li>Think tanks</li>
+<li>Research</li>
+<li>Deal with leaders at a personal level</li>
+<li>Implementers of proposed ideas</li>
+<li>Promoting transparency and accountability (from leaders to organisations)</li>
+<li>Strategists</li>
+<li>Create valuable networks for leaders</li>
+<li>Initiate and facilitate projects</li>
+<li>Innovation i.e books  and projects</li>
+
+
+</div>
+
+
+
+
+<div class="secondary">
+
+<h3>MISSION</h3>
+<p>To help leaders access resources through provision of ideas ,strategy formulation,implementationand promotion of accountability to the served while monitoring and evaluating set targets to ensure the attainment of sustainable development .</p>
+
+<h3>VISION</h3>
+<p>To be the source of grounding ideas for servant leadership for that implements sustainable grassroot development for Africa.</p>
+
+<h3>MOTTO</h3>
+<p>Thinking beyond words.</p>
+
+<h3>COMPANY VALUES</h3>
+<ol>
+  <li>Stewardship</li>
+  <li>Client value creation</li>
+  <li>Integrity</li>
+  <li>Diversity</li>
+  <li>Quality</li>
+  <li>Teamwork</li>
+  <li>Innovation</li>
+  <li>Leadership</li>
+  <li>Sustainability</li>
+  <li>Accessibility</li>
+  <li>Committment</li>
+  <li>Simplicity</li>
+  </ol>
+
+
+</div>
+
+</div>
+</section>
+
+
+
+
+</div>
+
+
+
+
+<div class="parallax"></div>
+
+<footer class="main-footer">
+  <p>&copy;2018 Global Development Strategy</p>
+  <img  src="img/twitter.png" alt="twitter icon" class="twitter-logo">
+  <img  src="img/facebook.png" alt="facebook icon" class="facebook-logo">
+</footer>
+
+
+<script >
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+
+}
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0"; 
+}
+</script>
+
+</body>
+</html>

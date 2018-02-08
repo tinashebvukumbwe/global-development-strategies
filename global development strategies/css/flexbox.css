@@ -1,0 +1,259 @@
+
+@font-face {
+    //font-family: myFirstFont;
+    //src: url(sansation_light.woff);
+}
+body {
+    //font-family: 'Open Sans Condensed', sans-serif;
+margin:0;
+}
+h1,h2,h3,nav{
+    //font-family: 'Lobster', cursive;
+}
+.container{
+margin:-1.0em -0.625em 0 -0.625em;
+height:6.45em;
+width:100%;
+left:0;
+padding:5px 1px 1px 20px;
+
+margin-bottom: 0.625em;
+color:white;
+background-image:  url("../img/664213510.jpg");
+}
+
+
+nav{
+
+	text-align: center;
+	padding:10px 0;
+	margin:20px 0 0;
+
+
+}
+nav ul{
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+nav li {
+
+	text-decoration: none;
+
+}
+
+
+nav a {
+
+	font-weight: bold;
+	
+}
+nav a , nav a:visited{
+
+	color:black;
+}
+nav a .selected,nav a:hover{
+
+	color:red;
+}
+body{
+
+	background-color: white;
+	color:black;
+}
+
+
+
+/*********************
+parallax effect
+*************************/
+.parallax {
+    /* The image used */
+   background-image:  url("../img/map.png");
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+}
+
+
+
+/***********************************
+ HOME-PAGE MAIN HEADER 
+
+**********************************/
+
+
+.logo{
+
+height: 2.5em;
+margin-top: -1.5em;
+margin-left: -0.625em;
+
+}
+
+
+
+body{
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+}
+
+
+
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+`
+
+
+.ll{
+display:none;
+}
+
+.sidenav {
+    height: 70%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: navy;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.primary{
+
+	//flex-grow: 1;
+}
+.gallery {
+	height: 250px;
+	margin-left:15px;
+	padding:20px;
+}
+
+
+
+.about1 {
+
+height:300px;
+width:50%;
+}
+
+.about2 {
+height:300px;
+width:50%;
+
+}
+.coll{
+
+    //display:flex;
+}
+.cole{
+    //display:flex;
+}
+h1{
+
+    text-align: center;
+    font-style:italic;
+}
+/*********************************
+FOOTER
+*********************************/
+
+.main-footer{
+display:flex;
+width:100%;
+justify-content:space-around;
+
+background-color:dodgerblue;
+padding-top: 1.875em;
+
+padding-right:20px;
+padding-left:-10px;
+margin-bottom:-10px;
+margin-left:-11px;
+
+}
+
+.twitter-logo{
+margin-left: 18.75em;
+height: 3.125em;
+}
+
+.facebook-logo{
+margin-right: 1.25em;
+height: 3.125em;
+}
+
+.login{
+
+}
+
+
+
+
+
+.loginform{
+padding:5px 50px 5px 0 ;
+margin-bottom:20px;
+}
+
+.loginbutton{
+background:aqua;
+margin-left:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

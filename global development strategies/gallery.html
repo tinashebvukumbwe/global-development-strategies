@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>GLOBAL DEVELOPMENT STRATEGISTS</title>
+        <meta charset="utf-8">
+ <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans+Condensed:300" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet">
+        <link href="css/flexbox.css" rel="stylesheet">
+        <link href="normalize/normalize.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+    </head>
+
+
+<body>
+<header>
+<div class="container">
+<h2>Global Dev strategies</h2>
+<img src="" alt="" class="logo">
+
+
+  
+
+
+
+
+
+  <div id="mySidenav" class="sidenav">
+<!-- for smaller screen sizes -->
+<nav>
+	<ul class="ul">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="index.html"><li class="li">Home</li></a>
+      <a href="about.html"><li class="li">About</li></a>
+      <a href="gallery.html"><li class="li">Gallery</li></a>
+      <a href="contacts.html"><li class="li">contacts</li></a>
+</ul>
+
+
+</nav>
+
+
+  </div>
+
+<span style="font-size:30px;cursor:pointer;color:dodgerblue;margin:25px;" onclick="openNav()">&#9776;</span>
+
+
+</header>
+
+
+  
+
+<nav >
+	<ul class="ll">
+
+	  <a href="index.html"><li class="li">Home</li></a>
+      <a href="about.html"><li class="li">About</li></a>
+      <a href="gallery.html"><li class="li">Gallery</li></a>
+      <a href="contacts.html"><li class="li">Contacts</li></a>
+   </ul>
+</nav>
+
+ 
+<section>
+<div class="slideshow-container">
+
+<div class="mySlides">
+ <img src="img/p9.jpg" class="img">
+ 
+</div>
+
+
+
+<div class="mySlides ">
+  <img src="img/p9.jpg" class="img">
+  
+</div>
+
+
+
+<div class="mySlides">
+ <img src="img/p3.jpg" class="img"> 
+ 
+</div>
+
+
+
+<div class="mySlides">
+ <img src="img/p8.jpg" class="img"> 
+ 
+</div>
+
+<div class="mySlides">
+  <img src="img/p 10.jpg" class="img"> 
+  
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span> 
+ <span class="dot" onclick="currentSlide(5)"></span> 
+ <span class="dot" onclick="currentSlide(6)"></span>  
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<div class="parallax"></div>
+
+<footer class="main-footer">
+  <p>&copy;2018 Global Development Strategy</p>
+  <img  src="img/twitter.png" alt="twitter icon" class="twitter-logo">
+  <img  src="img/facebook.png" alt="facebook icon" class="facebook-logo">
+</footer>
+
+
+<script >
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+
+}
+</script>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0"; 
+}
+</script>
+
+</body>
+</html>
